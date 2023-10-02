@@ -80,12 +80,23 @@ select {
     scroll-behavior: auto !important;
   }
 }
+html {
+  font-size: 2.6666666667vw;
+  color: #000;
+}
+@media (min-width: 767px) {
+  html {
+    font-size: 1vw;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 body {
-  font-family: "Lato", sans-serif;
-  font-family: "Noto Sans", sans-serif;
-  font-family: "Noto Sans JP", sans-serif;
-  font-family: "Noto Serif JP", serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 body * {
   box-sizing: border-box;
@@ -102,6 +113,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -111,6 +123,57 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+}
+
+header {
+  height: 7rem;
+}
+@media (min-width: 768px) {
+  header {
+    height: 7.4rem;
+  }
+}
+header .headerContainer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerContainer img {
+  width: 17.7rem;
+  height: 1.8rem;
+  margin-left: 0.8rem;
+}
+@media (min-width: 768px) {
+  header .headerContainer img {
+    width: 35.6rem;
+    height: 3.7rem;
+    margin-left: 2.3rem;
+  }
+}
+header .headerContainer a {
+  display: block;
+  width: 15.4rem;
+  height: 3.6rem;
+  background: #ea7c98;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.1666666667;
+  font-weight: 100;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  margin-right: 0.8rem;
+}
+@media (min-width: 768px) {
+  header .headerContainer a {
+    width: 24.4rem;
+    height: 5.8rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 2rem 0;
+    margin-right: 2.2rem;
+  }
 }
 
 /* @use "object/component/_bamburger"; */

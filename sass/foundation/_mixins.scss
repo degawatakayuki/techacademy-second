@@ -1,3 +1,7 @@
+@use "../foundation/variables" as var;
+
+
+
 // mixin ブレークポイント
 @mixin breakpoint( $point ) {
 	@if $point == tablet {
