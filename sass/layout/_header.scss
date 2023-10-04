@@ -8,6 +8,7 @@ header {
     @include min.breakpoint(pc) {
         height: 7.4rem;
     }
+    
 
     .headerContainer {
         display: flex;
@@ -16,6 +17,7 @@ header {
         align-items: center;
 
         img {
+            display: block;
             width: 17.7rem;
             height: 1.8rem;
             margin-left: 0.8rem;

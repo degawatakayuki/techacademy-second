@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirameki Fin Girls</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="https://kit.fontawesome.com/bc4df06650.js" crossorigin="anonymous"></script>
     <meta property="og:site_name" content="Kirameki Fin Girls｜女子会みたいなお金の勉強会" />
     <meta property="og:title" content="Kirameki Fin Girls｜女子会みたいなお金の勉強会">
@@ -30,10 +31,31 @@
     </header>
     <section class="p-mainVisual">
         <div class="mainVisualContainer">
-            <h1>仕事に、恋愛に、美容に、<br>
-                自分磨きに余念がないそこのあなた、<br>
-                お金のこともこの機会に見直してみませんか？<br>
-            </h1>
+            <div class="c-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/main_1.jpg" alt="メイン画像01"></div><!-- /.swiper-slide -->
+                        <div class="swiper-slide"><img src="images/main_2.jpg" alt="メイン画像02"></div><!-- /.swiper-slide -->
+                        <div class="swiper-slide"><img src="images/main_3.jpg" alt="メイン画像03"></div><!-- /.swiper-slide -->
+                    </div>
+                <div class="swiperPage">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div><!-- /.swiperPage -->
+            </div>
+            <div class="mainTitle"></div>
+                <h1>
+                    仕事に、恋愛に、美容に、<br>
+                    自分磨きに余念がないそこのあなた、<br>
+                    <span>お金のこともこの機会に<br class="sp-br">見直してみませんか？</span>
+                </h1>
+            
         </div><!-- /.mainVisualContainer -->
     </section><!-- /.p-mainVisual -->
     <section class="p-point">
@@ -343,5 +365,7 @@
             <p>©2022 Kirameki Fin Girls All Rights Reserved.</p>
         </div><!-- /.footerContainer -->
     </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/myswiper.js"></script>
 </body>
 </html>

@@ -76,7 +76,6 @@ select {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -117,12 +116,20 @@ a {
 }
 
 img {
-  max-width: 100%;
   vertical-align: bottom;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+}
+
+.sp-br {
+  display: block;
+}
+@media (min-width: 768px) {
+  .sp-br {
+    display: none;
+  }
 }
 
 header {
@@ -140,6 +147,7 @@ header .headerContainer {
   align-items: center;
 }
 header .headerContainer img {
+  display: block;
   width: 17.7rem;
   height: 1.8rem;
   margin-left: 0.8rem;
@@ -176,7 +184,89 @@ header .headerContainer a {
   }
 }
 
-/* @use "object/component/_bamburger"; */
+.p-mainVisual {
+  margin-bottom: 4.4rem;
+}
+@media (min-width: 768px) {
+  .p-mainVisual {
+    height: 91.1rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-mainVisual .mainVisualContainer {
+    position: relative;
+  }
+}
+@media (min-width: 768px) {
+  .p-mainVisual .mainVisualContainer .mainTitle {
+    width: 100%;
+    height: 22.8rem;
+    background: #fff;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    padding: 4.8rem 6rem;
+  }
+}
+.p-mainVisual .mainVisualContainer h1 {
+  display: block;
+  font-family: "Noto Serif JP";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 4.3rem;
+}
+@media (min-width: 768px) {
+  .p-mainVisual .mainVisualContainer h1 {
+    position: absolute;
+    left: 6rem;
+    bottom: 3.4rem;
+    z-index: 100;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: unset;
+  }
+}
+.p-mainVisual .mainVisualContainer h1 span {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2916666667;
+  margin-top: 1.7rem;
+}
+@media (min-width: 768px) {
+  .p-mainVisual .mainVisualContainer h1 span {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: unset;
+  }
+}
+
+.c-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+.c-swiper .swiper-wrapper {
+  width: 100%;
+  height: 25rem;
+}
+@media (min-width: 768px) {
+  .c-swiper .swiper-wrapper {
+    height: 100%;
+  }
+}
+.c-swiper .swiper-wrapper .swiper-slide img {
+  background-size: cover;
+}
+.c-swiper .swiperPage {
+  display: none;
+}
+
 /* @use "object/project/body-filter"; */
 /* @use "object/utility/spacing"; */
 
