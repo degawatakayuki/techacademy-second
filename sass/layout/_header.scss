@@ -4,11 +4,12 @@
 header {
 
     height: 7rem;
+    background-color: var.$bg-white;
 
     @include min.breakpoint(pc) {
         height: 7.4rem;
     }
-    
+
 
     .headerContainer {
         display: flex;

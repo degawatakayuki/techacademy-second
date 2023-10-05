@@ -97,6 +97,12 @@ html {
 body {
   font-family: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
+@media (min-width: 768px) {
+  body {
+    background-image: url(../../images/rose_bg_pc.jpg);
+    background-size: cover;
+  }
+}
 body * {
   box-sizing: border-box;
 }
@@ -123,6 +129,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+.container {
+  display: block;
+  width: 90.8%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 108rem;
+  }
+}
+
 .sp-br {
   display: block;
 }
@@ -134,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   height: 7rem;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   header {
@@ -185,11 +205,12 @@ header .headerContainer a {
 }
 
 .p-mainVisual {
-  margin-bottom: 4.4rem;
+  margin-bottom: 4.1rem;
 }
 @media (min-width: 768px) {
   .p-mainVisual {
     height: 91.1rem;
+    margin-bottom: unset;
   }
 }
 @media (min-width: 768px) {
@@ -198,7 +219,7 @@ header .headerContainer a {
   }
 }
 @media (min-width: 768px) {
-  .p-mainVisual .mainVisualContainer .mainTitle {
+  .p-mainVisual .mainVisualContainer .mainBg {
     width: 100%;
     height: 22.8rem;
     background: #fff;
@@ -244,6 +265,164 @@ header .headerContainer a {
     font-weight: 400;
     line-height: 1.5;
     margin-top: unset;
+  }
+}
+
+.p-point .pointContainer {
+  margin-bottom: 3.4rem;
+}
+@media (min-width: 768px) {
+  .p-point .pointContainer {
+    padding: 6.8rem 0 7.2rem;
+    margin-bottom: unset;
+  }
+}
+.p-point .pointContainer ul {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .p-point .pointContainer ul {
+    position: relative;
+    justify-content: center;
+    gap: 11.4rem;
+  }
+}
+.p-point .pointContainer ul li {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .p-point .pointContainer ul li {
+    width: 18rem;
+  }
+  .p-point .pointContainer ul li:first-of-type::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #000;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+}
+.p-point .pointContainer ul li .pointTitle {
+  display: block;
+  width: 15.6rem;
+  height: 15.6rem;
+  margin: 0 auto;
+  color: #e83b89;
+  font-family: "Noto Serif JP";
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  padding: 4rem 0;
+  border: 2px solid #e9448f;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .p-point .pointContainer ul li .pointTitle {
+    padding: 3.6rem 0;
+  }
+}
+.p-point .pointContainer ul li .pointTitle span {
+  display: block;
+  font-size: 4.7rem;
+  font-weight: 100;
+  margin-top: 0.8rem;
+}
+.p-point .pointContainer ul li p {
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 1.8235294118;
+  margin-top: 1.9rem;
+}
+@media (min-width: 768px) {
+  .p-point .pointContainer ul li p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+}
+
+.p-contact .contactContainer {
+  background: #fff0fd;
+  padding-top: 4.4rem;
+  padding-bottom: 3.4rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .p-contact .contactContainer {
+    padding-top: 6.2rem;
+    padding-bottom: 6.4rem;
+  }
+}
+.p-contact .contactContainer .contactTitle {
+  font-family: "Noto Serif JP";
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.7777777778;
+  color: #e83b89;
+}
+@media (min-width: 768px) {
+  .p-contact .contactContainer .contactTitle {
+    font-size: 2.8rem;
+    line-height: 1.5;
+  }
+}
+.p-contact .contactContainer .contactTitle span {
+  font-size: 2.4rem;
+  line-height: 1.3333333333;
+}
+@media (min-width: 768px) {
+  .p-contact .contactContainer .contactTitle span {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+.p-contact .contactContainer .contactTitle::before, .p-contact .contactContainer .contactTitle::after {
+  content: "＼";
+  font-size: 2.4rem;
+  line-height: 1.3333333333;
+}
+@media (min-width: 768px) {
+  .p-contact .contactContainer .contactTitle::before, .p-contact .contactContainer .contactTitle::after {
+    font-size: 3.5rem;
+    line-height: 1.0285714286;
+  }
+}
+.p-contact .contactContainer .contactTitle::after {
+  content: "／";
+}
+.p-contact .contactContainer a {
+  display: block;
+  width: 18.1rem;
+  height: 4.6rem;
+  background: #ea7c98;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 100;
+  line-height: 1;
+  border-radius: 15px;
+  margin: 2.3rem auto 2.2rem;
+  padding: 1.4rem 0;
+}
+@media (min-width: 768px) {
+  .p-contact .contactContainer a {
+    width: 41rem;
+    height: 7.8rem;
+    font-size: 2.8rem;
+    padding: 2.3rem;
+    margin: 4.6rem auto 4.2rem;
+  }
+}
+.p-contact .contactContainer p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.6666666667;
+}
+@media (min-width: 768px) {
+  .p-contact .contactContainer p {
+    font-size: 2.4rem;
+    line-height: 1.5;
   }
 }
 
