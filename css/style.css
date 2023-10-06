@@ -343,6 +343,14 @@ header .headerContainer a {
   }
 }
 
+.p-contact {
+  background: #fff0fd;
+}
+@media (min-width: 768px) {
+  .p-contact {
+    background: unset;
+  }
+}
 .p-contact .contactContainer {
   background: #fff0fd;
   padding-top: 4.4rem;
@@ -423,6 +431,89 @@ header .headerContainer a {
   .p-contact .contactContainer p {
     font-size: 2.4rem;
     line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-thinking .thinkingContainer {
+    position: relative;
+  }
+}
+.p-thinking .thinkingContainer h2 {
+  font-family: "Noto Serif JP";
+  color: #e83b89;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.7777777778;
+  margin-top: 4.4rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+@media (min-width: 768px) {
+  .p-thinking .thinkingContainer h2 {
+    position: absolute;
+    font-size: 3rem;
+    line-height: 1.8;
+    margin-top: unset;
+    margin-bottom: unset;
+    top: 6.9rem;
+    right: 3.1rem;
+  }
+}
+.p-thinking .thinkingContainer h2 span {
+  font-size: 2.4rem;
+  line-height: 1.3333333333;
+}
+@media (min-width: 768px) {
+  .p-thinking .thinkingContainer h2 span {
+    font-size: 3.5rem;
+    line-height: 1.5428571429;
+  }
+}
+.p-thinking .thinkingContainer img {
+  width: 100%;
+  height: 22.7rem;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .p-thinking .thinkingContainer img {
+    height: 72rem;
+  }
+}
+.p-thinking .thinkingContainer .thinkingContents {
+  margin-top: 2.6rem;
+}
+@media (min-width: 768px) {
+  .p-thinking .thinkingContainer .thinkingContents {
+    position: absolute;
+    top: 20.6rem;
+    right: 3.1rem;
+  }
+}
+.p-thinking .thinkingContainer .thinkingContents p {
+  font-family: "Noto Serif JP";
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.8235294118;
+  margin-bottom: 0.1rem;
+}
+@media (min-width: 768px) {
+  .p-thinking .thinkingContainer .thinkingContents p {
+    font-size: 2.5rem;
+    line-height: 1;
+    background: #fff;
+    padding: 0.4rem 1.4rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.p-thinking .thinkingContainer .thinkingContents p:nth-of-type(3) {
+  margin-bottom: 0.2rem;
+}
+@media (min-width: 768px) {
+  .p-thinking .thinkingContainer .thinkingContents p:nth-of-type(3) {
+    margin-bottom: 2.4rem;
   }
 }
 
