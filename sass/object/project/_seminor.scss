@@ -1,0 +1,112 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-seminor {
+    
+    .seminorContainer {
+
+        padding-top: 3.6rem;
+        padding-bottom: 3.2rem;
+
+        @include min.breakpoint(pc) {
+            padding-top: 9rem;
+            padding-bottom: unset;
+        }
+
+        h2 {
+            font-family: "Noto Serif JP";
+            font-size: 1.8rem;
+            font-weight: 900;
+            line-height: calc(32 / 18);
+            color: var.$text-pink;
+            text-align: center;
+            margin-bottom: 2.7rem;
+
+            @include min.breakpoint(pc) {
+                font-size: 2.8rem;
+                line-height: calc(70 / 28);
+                margin-bottom: 8.4rem;
+            }
+
+            span {
+                font-size: 2.4rem;
+                line-height: calc(32 / 24);
+
+                @include min.breakpoint(pc) {
+                    font-size: 3.5rem;
+                    line-height: calc(70 / 35);
+                }
+            }
+        }
+
+        img {
+            height: 100%;
+            max-height: 17.3rem;
+            background-size: cover;
+            
+            @include min.breakpoint(pc) {
+                width: 100%;
+                max-height: 55rem;
+            }
+        }
+
+        .seminorContents {
+
+            position: relative;
+            
+            .seminorTexts {
+
+                position: absolute;
+                top: 29%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                color: var.$sub-color;
+
+                h3 {                  
+
+                    font-size: 1.1rem;
+                    font-weight: 100;
+                    line-height: 1;
+                    margin-bottom: 0.5rem;
+
+                    @include min.breakpoint(pc) {
+
+                        font-size: 2.8rem;
+                        letter-spacing: 0.02em;
+                        margin-bottom: 1.2rem;
+                    }
+                }
+
+                p {
+
+                    font-family: "Noto Serif JP";
+                    font-size: 1.3rem;
+                    font-weight: 900;
+                    line-height: calc(23 / 13);
+                    
+                    @include min.breakpoint(pc) {
+                        
+                        font-size: 3rem;
+                        line-height: calc(65 / 30);
+                        letter-spacing: 0.02em;
+                    }
+
+                    span {
+                        font-size: 1.6rem;
+                        line-height: calc(23 / 16);
+
+                        @include min.breakpoint(pc) {
+                            font-size: 4rem;
+                            line-height: calc(65 / 40);
+                        }
+
+                        &:last-of-type {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

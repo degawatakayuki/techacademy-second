@@ -7,6 +7,7 @@
     <title>Kirameki Fin Girls</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bc4df06650.js" crossorigin="anonymous"></script>
     <meta property="og:site_name" content="Kirameki Fin Girls｜女子会みたいなお金の勉強会" />
     <meta property="og:title" content="Kirameki Fin Girls｜女子会みたいなお金の勉強会">
@@ -21,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,100&family=Noto+Sans+JP:wght@500;700;900&family=Noto+Sans:wght@500;700;900&family=Noto+Serif+JP:wght@400;600;700;900&family=Oleo+Script&family=Poppins:wght@800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -49,7 +51,7 @@
                     <div class="swiper-scrollbar"></div>
                 </div><!-- /.swiperPage -->
             </div>
-            <div class="mainBg"></div>
+            <!-- <div class="mainBg"></div> -->
             <h1>
                 仕事に、恋愛に、美容に、<br>
                 自分磨きに余念がないそこのあなた、<br>
@@ -119,7 +121,7 @@
             <h2><span class="sp-design">「よくある<span class="pc-design">お悩み</span>」</span><br class="sp-br">解決します！</h2>
             <div class="solutionContents">
                 <div class="c-solutionCard">
-                    <img src="images/solution_pc01.jpg" alt="お悩み画像01">
+                    <img src="images/solution_pc01.jpg" alt="お悩み画像01" data-aos="fade-right">
                     <div class="solutionContent">
                         <div class="solutionTitle">
                             <span>01</span>
@@ -131,7 +133,7 @@
                     </div><!-- /.solutionContents -->
                 </div><!-- /.seminorCard -->
                 <div class="c-solutionCard reverse">
-                    <img src="images/solution_pc02.jpg" alt="お悩み画像02">
+                    <img src="images/solution_pc02.jpg" alt="お悩み画像02" data-aos="fade-left">
                     <div class="solutionContent">
                         <div class="solutionTitle">
                             <span>02</span>
@@ -143,7 +145,7 @@
                     </div><!-- /.solutionContents -->
                 </div><!-- /.seminorCard -->
                 <div class="c-solutionCard">
-                    <img src="images/solution_pc03.jpg" alt="お悩み画像03">
+                    <img src="images/solution_pc03.jpg" alt="お悩み画像03" data-aos="fade-right">
                     <div class="solutionContent">
                         <div class="solutionTitle">
                             <span>03</span>
@@ -155,7 +157,7 @@
                     </div><!-- /.solutionContents -->
                 </div><!-- /.seminorCard -->
                 <div class="c-solutionCard reverse">
-                    <img src="images/solution_pc04.jpg" alt="お悩み画像04">
+                    <img src="images/solution_pc04.jpg" alt="お悩み画像04" data-aos="fade-left">
                     <div class="solutionContent">
                         <div class="solutionTitle">
                             <span>04</span>
@@ -326,12 +328,12 @@
             <p class="name">赤出 花子<span>先生</span></p>
             <p class="career">
                 金融機関在職中にファイナンシャルプランナーの存在を知る。<br>
-                これまで体系的にマネー教育を受けてこなかったことに大きな衝撃を受け、独立。これまでの家計診断は600件。相談者に寄り添いながら、お金が貯まらない家計を貯まる家計にナビゲートしている。
+                これまで体系的にマネー教育を受けてこなかったことに大きな衝撃を受け、独立。<br>これまでの家計診断は600件。相談者に寄り添いながら、お金が貯まらない家計を貯まる家計にナビゲートしている。
             </p>
         </div><!-- /.instractorContainer -->
     </section><!-- /.p-instractor -->
     <section class="p-access">
-        <div class="accessContainer">
+        <div class="accessContainer container">
             <h2>セミナー日程/アクセス</h2>
             <div class="schedule">
                 <h3>開催日程</h3>
@@ -343,27 +345,27 @@
                 </ul>
                 <p>
                     ※ご好評につき、お席が埋まりやすくなっております。<br>
-                    定員に達し次第、お申込みを修了させていただく場合がございますので、<br>
-                    お早目にお申込みください。
+                    定員に達し次第、お申込みを修了させていただく場合がございますので、お早目にお申込みください。
                 </p>
             </div><!-- /.schedule -->
             <div class="venue">
                 <h3>会場</h3>
                 <p>
-                    東京都渋谷区渋谷1-17-4 PMO 8階　会議室Ruby<br>
+                    東京都渋谷区渋谷1-17-4 PMO 8階<br class="sp-br">
+                    会議室Ruby<br>
                     （※渋谷駅 宮益坂口から徒歩7分）
                 </p>
             </div><!-- /.venue -->
         </div><!-- /.accessContainer -->
     </section><!-- /.p-access -->
     <section class="p-contact">
-        <div class="contactContainer">
-            <h2 class="contactTitle">＼参加費無料／</h2><!-- /.contactTitle -->
+        <div class="contactContainer container access">
+            <h2 class="contactTitle">参加費<span>無料</span></h2><!-- /.contactTitle -->
             <a href="">参加を申し込む</a>
         </div><!-- /.contactContainer -->
     </section><!-- /.p-contact -->
     <footer>
-        <div class="footerContainer">
+        <div class="footerContainer container">
             <img src="images/logo.jpg" alt="フッターロゴ">
             <p>©2022 Kirameki Fin Girls All Rights Reserved.</p>
         </div><!-- /.footerContainer -->
@@ -372,5 +374,8 @@
     <script src="js/accordion.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/myswiper.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

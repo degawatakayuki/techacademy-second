@@ -1,0 +1,35 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.c-swiper {
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .swiper-wrapper {
+
+        width: 100%;
+        height: 25rem;
+
+        @include min.breakpoint(pc) {
+
+            height: 100%;
+        }
+
+        .swiper-slide {
+            
+            img {
+
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+        }
+    }
+
+    .swiperPage {
+        
+        display: none;
+    }
+}

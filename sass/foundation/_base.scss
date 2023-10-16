@@ -1,15 +1,17 @@
 @use "../foundation/mixins" as min;
 @use "../foundation/variables" as var;
 
+//フォントサイズ設定
 html {
+    //スマホサイズ
     font-size: var.$font-sp;
     color: var.$main-color;
-
-    @include min.breakpoint(tablet) {
-        font-size: var.$font-md;
+    //タブレットサイズ
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+        font-size: 1vw;
     }
-
-    @include min.breakpoint(pc) {
+    //PCサイズ
+    @media screen and (min-width: 1024px) {
         font-size: var.$font-pc;
     }
 }

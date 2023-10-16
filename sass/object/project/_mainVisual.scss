@@ -1,0 +1,82 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-mainVisual {
+
+    margin-bottom: 4.1rem;
+
+    @include min.breakpoint(pc) {
+
+        height: 100%;
+        max-height: 91.1rem;
+        margin-bottom: unset;
+    }
+
+    .mainVisualContainer {
+
+        @include min.breakpoint(pc) {
+
+            height: 100%;
+            position: relative;
+        }
+
+        .mainBg {
+
+            @include min.breakpoint(pc) {
+
+                width: 100%;
+                height: 22.8rem;
+                background: var.$bg-white;
+                opacity: 0.3;
+                position: absolute;
+                bottom: 0;
+                z-index: 10;
+                padding: 4.8rem 0 4.8rem 6rem;
+            }
+        }
+        
+        h1 {
+
+            display: block;
+            font-family: 'Noto Serif JP';
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: calc(27 / 18);
+            text-align: center;
+            margin-top: 4.3rem;
+
+            @include min.breakpoint(pc) {
+                
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(255, 255, 255, 0.3);
+                padding: 2.5% 0 2.5% 4.4%;
+                z-index: 100;
+                font-size: 3.6rem;
+                font-weight: 400;
+                line-height: calc(54 / 36);
+                text-align: left;
+                margin-top: unset;
+            }
+
+            span {
+
+                display: block;
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: calc(31 / 24);
+                margin-top: 1.7rem;
+
+                @include min.breakpoint(pc) {
+                    
+                    font-size: 3.6rem;
+                    font-weight: 400;
+                    line-height: calc(54 / 36);
+                    margin-top: unset;
+                }
+            }
+        }
+    }
+}

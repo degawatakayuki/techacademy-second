@@ -1,0 +1,40 @@
+@use "../foundation/mixins" as min;
+@use "../foundation/variables" as var;
+
+footer {
+
+    .footerContainer {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        @include min.breakpoint(pc) {
+            padding-top: 11.4rem;
+            padding-bottom: 11rem;
+        }
+
+        img {
+            width: 17.8rem;
+            height: 1.8rem;
+            margin: 0 auto;
+
+            @include min.breakpoint(pc) {
+                width: 35.6rem;
+                height: 3.7rem;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 100;
+            line-height: calc(16 / 11);
+            text-align: center;
+            margin-top: 1rem;
+
+            @include min.breakpoint(pc) {
+                font-size: 1.4rem;
+                line-height: 1;
+                margin-top: 4.6rem;
+            }
+        }
+    }
+}

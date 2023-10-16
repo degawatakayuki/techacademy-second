@@ -1,0 +1,111 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.c-accordionCards {
+
+    @include min.breakpoint(pc) {
+
+        padding: 5.8rem 6.6rem 5rem;
+    }
+
+    .accordionContents {
+
+        margin-bottom: 1.84rem;
+
+        .accordion-title {
+
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid #e42677;
+            color: var.$text-pink;
+            font-size: 1.4rem;
+            font-weight: 100;
+            line-height: calc(20 / 14);
+            padding-left: 0.8rem;
+            padding-bottom: 0.4rem;
+
+            @include min.breakpoint(pc) {
+
+                font-size: 2.3rem;
+                line-height: 1;
+                padding-left: unset;
+                padding-bottom: 1rem;
+            }
+
+            &::after {
+
+                position: absolute;
+                top: -0.1rem;
+                right: 0.6rem;
+                display: block;
+                content: "+";
+                width: 2rem;
+                height: 2rem;
+                background: #e42677;
+                color: var.$text-white;
+                font-size: 1.2rem;
+                line-height: 2rem;
+                font-weight: 100;
+                text-align: center;
+
+                @include min.breakpoint(pc) {
+
+                    top: -1rem;
+                    right: 1rem;
+                    width: 3.6rem;
+                    height: 3.6rem;
+                    font-size: 1.6rem;
+                    line-height: 3.6rem;
+                }
+            }
+
+            &.active {
+
+                &::after {
+
+                    content: "ー";
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+
+                    @include min.breakpoint(pc) {
+
+                        font-size: 1.6rem;
+                        line-height: 3.6rem;
+                    }
+                }
+            }
+        }
+
+        .accordion-content {
+
+            padding: 1rem 0 0 2.4rem;
+
+            @include min.breakpoint(pc) {
+
+                padding: 1.8rem 8rem 3.6rem;
+            }
+
+            li {
+
+                font-size: 1.4rem;
+                font-weight: 100;
+                line-height: calc(21 / 14);
+
+                @include min.breakpoint(pc) {
+                    
+                    font-size: 1.8rem;
+                    line-height: calc(23 / 18);
+                    margin-bottom: 1.2rem;
+
+                    &:last-of-type {
+                        margin-bottom: unset;
+                    }
+                }
+
+                &::before {
+                    content: "・";
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-instractor {
+
+    background-image: linear-gradient( 0deg, rgb(252,235,240) 0%, rgb(252,235,240) 15%, rgb(255,252,247) 30%, rgb(254,246,229) 70%, rgb(252,236,240) 85%, rgb(252,235,240) 100%);
+
+    @include min.breakpoint(pc) {
+        background-image: unset;
+    }
+
+    .instractorContainer {
+
+        background: unset;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 4.3rem;
+
+        @include min.breakpoint(pc) {
+
+            background-image: linear-gradient( -45deg, rgb(252,235,240) 0%, rgb(252,235,240) 15%, rgb(255,252,247) 30%, rgb(254,246,229) 70%, rgb(252,236,240) 86%, rgb(252,235,240) 100%);  
+            padding-left: 14.7%;
+            padding-right: 14.6%;
+            padding-top: 10.8rem;
+            padding-bottom: 9.3rem;
+        }
+
+        h2 {
+
+            position: relative;
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 100;
+            line-height: calc(25 / 18);
+            margin-bottom: 2.3rem;
+
+            @include min.breakpoint(pc) {
+
+                font-size: 3rem;
+                line-height: calc(54 / 30);
+                margin-bottom: 6.6rem;
+            }
+
+            &::before, &::after {
+
+                position: absolute;
+                bottom: 0.2rem;
+                display: block;
+                content: "";
+                width: 1.9rem;
+                height: 2.3rem;
+                background-image: url(../../../images/flower_midashi_pc.png);
+                background-size: cover;
+
+                @include min.breakpoint(pc) {
+
+                    bottom: 0.2rem;
+                    width: 4.3rem;
+                    height: 5.4rem;
+                }
+            }
+
+            &::before {
+                left: -2.5rem;
+
+                @include min.breakpoint(pc) {
+                    left: -6.6rem;
+                }
+            }
+
+            &::after {
+                right: -2.7rem;
+
+                @include min.breakpoint(pc) {
+                    right: -6.7rem;
+                }
+            }
+        }
+
+        .introduction {
+            font-size: 1.4rem;
+            font-weight: 100;
+            line-height: calc(21 / 14);
+            text-align: left;
+
+            @include min.breakpoint(pc) {
+                font-size: 2.3rem;
+                line-height: calc(40 / 23);
+            }
+        }
+
+        img {
+
+            width: 16.7rem;
+            height: 25rem;
+            background-size: cover;
+            margin: 1.4rem auto 1.8rem;
+
+            @include min.breakpoint(pc) {
+
+                width: 31.6rem;
+                height: 47.5rem;
+                margin: 6.6rem auto 7.3rem;
+            }
+        }
+
+        .name {
+
+            font-size: 1.6rem;
+            font-weight: 100;
+            line-height: calc(21 / 16);
+            margin-bottom: 1.6rem;
+
+            @include min.breakpoint(pc) {
+                
+                font-size: 3rem;
+                line-height: 1;
+                margin-bottom: 7.4rem;
+            }
+
+            span {
+                font-size: 1.4rem;
+
+                @include min.breakpoint(pc) {
+                    font-size: 2.5rem;
+                    line-height: calc(30 / 25);
+                }
+            }
+        }
+
+        .career {
+            font-size: 1.3rem;
+            font-weight: 100;
+            line-height: calc(17 / 13);
+            text-align: left;
+
+            @include min.breakpoint(pc) {
+                font-size: 1.8rem;
+                line-height: calc(30 / 18);
+            }
+        }
+    }
+}

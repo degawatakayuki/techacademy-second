@@ -1,0 +1,131 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-merit {
+
+    .meritContainer {
+
+        background-image: url("../../../images/merit_bg_pc.jpg");
+        background-size: cover;
+        padding: 4rem 1.3rem 4.2rem;
+
+        @include min.breakpoint(pc) {
+
+            max-width: 108rem;
+            display: block;
+            margin: 0 auto;
+            padding: 9.4rem 10.5rem 9.8rem;
+        }
+
+        h2 {
+
+            font-size: 1.8rem;
+            font-weight: 100;
+            line-height: calc(25 / 18);
+            text-align: center;
+
+            @include min.breakpoint(pc) {
+
+                font-size: 3rem;
+                line-height: calc(54 / 30);
+            }
+
+            span {
+
+                position: relative;
+
+                &::before, &::after {
+
+                    position: absolute;
+                    bottom: 0.1rem;
+                    display: block;
+                    content: "";
+                    width: 1.9rem;
+                    height: 2.4rem;
+                    background-image: url(../../../images/flower_midashi_pc.png);
+                    background-size: cover;
+
+                    @include min.breakpoint(pc) {
+
+                        width: 4.3rem;
+                        height: 5.4rem;
+                        bottom: -0.8rem;
+                    }
+                }
+
+                &::before {
+
+                    left: -3.3rem;
+
+                    @include min.breakpoint(pc) {
+                        left: -7rem;
+                    }
+                }
+
+                &::after {
+
+                    right: -2.4rem;
+
+                    @include min.breakpoint(pc) {
+
+                        right: -7.4rem;
+                    }
+                }
+            }
+        }
+
+        .meritContents {
+
+            margin-top: 1.8rem;
+
+            @include min.breakpoint(pc) {
+
+                margin-top: 8.4rem;
+            }
+
+            dl {
+
+                margin-bottom: 1.3rem;
+
+                @include min.breakpoint(pc) {
+
+                    margin-bottom: 6rem;
+                }
+
+                dd {
+
+                    font-size: 1.4rem;
+                    font-weight: 100;
+                    line-height: 2;
+                    color: var.$text-pink;
+                    margin-bottom: 0.5rem;
+
+                    @include min.breakpoint(pc) {
+
+                        font-size: 2.3rem;
+                        line-height: 1;
+                        margin-bottom: 3rem;
+                    }
+                }
+
+                dt {
+
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                    line-height: calc(17 / 13);
+
+                    @include min.breakpoint(pc) {
+
+                        font-size: 1.8rem;
+                        line-height: 1;
+                    }
+                }
+
+                &:last-of-type {
+                    
+                    margin-bottom: unset;
+                }
+            }
+        }
+    }
+}

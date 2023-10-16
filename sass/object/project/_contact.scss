@@ -1,0 +1,231 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-contact {
+
+    background: var.$bg-contact;
+
+    @include min.breakpoint(pc) {
+
+        background: unset;
+    }
+
+    .contactContainer {
+
+        background: var.$bg-contact;
+        padding-top: 4.4rem;
+        padding-bottom: 3.4rem;
+        text-align: center;
+
+        @include min.breakpoint(pc) {
+
+            padding-top: 6.2rem;
+            padding-bottom: 6.8rem;
+        }
+
+        .contactTitle {
+
+            font-family: 'Noto Serif JP';
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: calc(32 / 18);
+            color: var.$text-pink;
+
+            @include min.breakpoint(pc) {
+
+                font-size: 2.8rem;
+                line-height: calc(42 / 28);
+            }
+
+            span {
+
+                font-size: 2.4rem;
+                line-height: calc(32 / 24);
+
+                @include min.breakpoint(pc) {
+
+                    font-size: 3.5rem;
+                    line-height: calc(42 / 35);
+                }
+            }
+
+            &::before, &::after {
+
+                content: "＼";
+                font-size: 2.4rem;
+                line-height: calc(32 / 24);
+
+                @include min.breakpoint(pc) {
+
+                    font-size: 3.5rem;
+                    line-height: calc(36 / 35);
+                }
+            }
+
+            &::after {
+
+                content: "／";
+            }
+        }
+
+        a {
+
+            display: block;
+            width: 18.1rem;
+            height: 4.6rem;
+            background: var.$bg-pink;
+            color: var.$text-white;
+            font-size: 1.7rem;
+            font-weight: 100;
+            line-height: 1;
+            border-radius: 15px;
+            margin: 2.3rem auto 2.2rem;
+            padding: 1.4rem 0;
+
+            @include min.breakpoint(pc) {
+
+                width: 41rem;
+                height: 7.8rem;
+                font-size: 2.8rem;
+                padding: 2.3rem;
+                margin: 4.6rem auto 4rem;
+            }
+        }
+
+        p {
+
+            font-size: 1.5rem;
+            font-weight: 100;
+            line-height: calc(25 / 15);
+
+            @include min.breakpoint(pc) {
+
+                font-size: 2.4rem;
+                line-height: calc(36 / 24);
+            }
+        }
+
+        &.seminor {
+
+            width: 91.5%;
+            padding-top: 3.7rem;
+            padding-bottom: 4rem;
+
+            @include min.breakpoint(pc) {
+
+                width: 100%;
+                padding-top: 7rem;
+                padding-bottom: 7rem;
+            }
+
+            p {
+
+                margin-bottom: 2.3rem;
+
+                @include min.breakpoint(pc) {
+
+                    margin-bottom: 4.4rem;
+                }
+            }
+
+            a {
+
+                margin-bottom: unset;
+
+                @include min.breakpoint(pc) {
+
+                    margin-top: 3.4rem;
+                }
+            }
+        }
+
+        &.seminorDetail {
+
+            padding-bottom: 1.8rem;
+
+            @include min.breakpoint(pc) {
+
+                padding-bottom: 2.8rem;
+            }
+
+            a {
+
+                margin-top: 1.9rem;
+
+                @include min.breakpoint(pc) {
+
+                    margin-top: 4.6rem;
+                }
+            }
+        }
+
+        &.merit {
+
+            padding-bottom: 1.8rem;
+
+            @include min.breakpoint(pc) {
+
+                padding-bottom: 3rem;
+            }
+            
+            a {
+
+                margin-top: 2rem;
+
+                @include min.breakpoint(pc) {
+
+                    margin-top: 4.5rem;
+                }
+            }
+        }
+
+        &.voice {
+
+            padding-top: 3.4rem;
+            padding-bottom: 1.8rem;
+
+            @include min.breakpoint(pc) {
+
+                padding-top: 6.2rem;
+                padding-bottom: 2.8rem;
+            }
+
+            a {
+
+                margin-top: 2.1rem;
+
+                @include min.breakpoint(pc) {
+
+                    margin-top: 4.6rem;
+                }
+            }
+        }
+
+        &.access {
+
+            padding-top: 3.4rem;
+            padding-bottom: 1.8rem;
+
+            @include min.breakpoint(pc) {
+
+                padding-top: 6.2rem;
+                padding-bottom: 3rem;
+            }
+
+            a {
+
+                margin-top: 1.8rem;
+
+                &:hover {
+
+                    opacity: .7;
+                }
+
+                @include min.breakpoint(pc) {
+
+                    margin-top: 4.6rem;
+                }
+            }
+        }
+    }
+}

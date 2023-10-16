@@ -1,0 +1,91 @@
+@use "../../foundation/mixins" as min;
+@use "../../foundation/variables" as var;
+
+.p-point {
+
+    .pointContainer {
+
+        margin-bottom: 3.4rem;
+
+        @include min.breakpoint(pc) {
+
+            padding: 6.8rem 0 7.2rem;
+            margin-bottom: unset;
+        }
+
+        ul {
+
+            display: flex;
+            justify-content: space-between;
+
+            @include min.breakpoint(pc) {
+
+                position: relative;
+                justify-content: center;
+                gap: 11.4rem;
+            }
+
+            li {
+
+                text-align: center;
+
+                @include min.breakpoint(pc) {
+
+                    width: 18rem;
+
+                    &:first-of-type::before {
+                        content: "";
+                        position: absolute;
+                        border-left: 1px solid var.$main-color;
+                        left: 50%;
+                        height: 100%;
+                        transform: translateX(-50%);
+                    }
+                }
+
+                .pointTitle {
+
+                    display: block;
+                    width: 15.6rem;
+                    height: 15.6rem;
+                    margin: 0 auto;
+                    color: var.$text-pink;
+                    font-family: 'Noto Serif JP';
+                    font-size: 2rem;
+                    font-weight: bold;
+                    line-height: 1;
+                    text-align: center;
+                    padding: 4rem 0;
+                    border: 2px solid var.$srcle-pink;
+                    border-radius: 50%;
+
+                    @include min.breakpoint(pc) {
+                        padding: 3.6rem 0;
+                    }
+                    
+                    span {
+
+                        display: block;
+                        font-size: 4.7rem;
+                        font-weight: 100;
+                        margin-top: 0.8rem;
+                    }
+                }
+
+                p {
+
+                    font-size: 1.7rem;
+                    font-weight: 100;
+                    line-height: calc(31 / 17);
+                    margin-top: 1.9rem;
+
+                    @include min.breakpoint(pc) {
+
+                        font-size: 2.4rem;
+                        line-height: calc(36 / 24);
+                    }
+                }
+            }
+        }
+    }
+}
